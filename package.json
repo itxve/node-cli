@@ -1,0 +1,49 @@
+{
+  "name": "ntx-cli",
+  "version": "1.2.0",
+  "description": "kill process",
+  "main": "src/index.js",
+  "scripts": {
+    "watch": "nodemon",
+    "test": "mocha --reporter spec"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "dist/*",
+      "test/*"
+    ],
+    "watch": [
+      "src"
+    ],
+    "ext": "js"
+  },
+  "bin": {
+    "ntx": "src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itxve/node-cli.git"
+  },
+  "keywords": [
+    "kill process"
+  ],
+  "author": "itxve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itxve/node-cli/issues"
+  },
+  "homepage": "https://github.com/itxve/node-cli#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "chai": "^4.3.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "fkill": "^7.1.0",
+    "meow": "^9.0.0"
+  }
+}
